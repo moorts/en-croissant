@@ -147,9 +147,9 @@ impl ToString for Outcome {
     fn to_string(&self) -> String {
         match &self {
             Outcome::WhiteWin => "1-0".to_string(),
-            Outcome::BlackWin => "1-0".to_string(),
-            Outcome::Draw => "1-0".to_string(),
-            Outcome::Unknown => "1-0".to_string(),
+            Outcome::BlackWin => "0-1".to_string(),
+            Outcome::Draw => "1/2-1/2".to_string(),
+            Outcome::Unknown => "*".to_string(),
         }
     }
 }
